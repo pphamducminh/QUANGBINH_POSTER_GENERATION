@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.config/
+.env
+.env.*
+!.env.example
+.playwright-mcp/
+.quangbinh_runtime/
+__marimo__/
+
+# Training data, weights, and local exports stay outside the app repository.
+/notebook.py
+/dataset/
+/quang_phu/
+/*_lora_flux_nf4/
+/wandb/
+/outputs/
+*.safetensors
+*.parquet
+*.zip
+/poster_*.pdf
+/before_lora.png
+/after_lora.png
+/quang_phu_poster.png
+/test.png
