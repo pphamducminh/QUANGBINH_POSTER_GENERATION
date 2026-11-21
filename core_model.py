@@ -76,7 +76,7 @@ def load_flux_pipeline(lora_path, ckpt_id="black-forest-labs/FLUX.1-dev"):
     pipeline.load_lora_weights(lora_path)
     # Offload inactive components to CPU instead of holding everything on GPU.
     pipeline.enable_model_cpu_offload()
-    pipeline.enable_vae_tiling()
+    pipeline.vae.enable_tiling()
     
     print("✅ Mô hình FLUX LoRA đã sẵn sàng trên GPU!")
     return pipeline
